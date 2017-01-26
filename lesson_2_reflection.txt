@@ -1,0 +1,52 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    command > diff -u file1 file2
+    detects lines where diffs are. line are tagged with + / - signs to explain
+    wheter it's an addition to the file or a deletion. 
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    one can see changes and detect sources of errors more easily
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    because there are connections between files and they need to be taken 
+    into account to ease analysis
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    when coding you might need to change several files to materialize a new 
+    feature. Thus, one need to be able to view the changes as a block. in other systems, you only deal with one file at a time
+
+How can you use the commands git log and git diff to view the history of files?
+
+    command > git log
+    provides the history of changes made in the repository
+    command > git diff commit_id_1 commit_id_2
+    highlights the differences between the 2 commits. commit_id_1 should be the
+    oldest one
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    now i can make big changes while having an assurance :)
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    all my projects
+
+LESSON 2
+
+What happens when you initialize a repository? Why do you need to do it?
+
+    it create the git workspace. otherwise no repo !
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+    it allows to create the block of files that will be commited
+
