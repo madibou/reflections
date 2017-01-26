@@ -18,10 +18,12 @@ docs does?
     into account to ease analysis
 
 Why do you think some version control systems, like Git, allow saving multiple
-files in one commit, while others, like Google Docs, treat each file separately?
+files in one commit, while others, like Google Docs, treat each file 
+separately?
 
     when coding you might need to change several files to materialize a new 
-    feature. Thus, one need to be able to view the changes as a block. in other systems, you only deal with one file at a time
+    feature. Thus, one need to be able to view the changes as a block. in 
+    other systems, you only deal with one file at a time
 
 How can you use the commands git log and git diff to view the history of files?
 
@@ -46,7 +48,29 @@ What happens when you initialize a repository? Why do you need to do it?
 
     it create the git workspace. otherwise no repo !
 
-How is the staging area different from the working directory and the repository? What value do you think it offers?
+How is the staging area different from the working directory and the 
+repository? What value do you think it offers?
 
     it allows to create the block of files that will be commited
+
+How can you use the staging area to make sure you have one commit per 
+logical change?
+
+    once you add files you want to commit in the staging area, type command
+    > git diff --staged
+    it allows you to compare the commits you are will to do vs the repo.
+    one shoud make sure that the commit make one logical change only
+
+What are some situations when branches would be helpful in keeping your 
+history organized? How would branches help?
+
+    when you are willing to make a big change a branch might be helpful. 
+    should be seen as a context
+
+How do the diagrams help you visualize the branch structure?
+
+    graph helps to see where you stand within the various branches. command:
+    >git log --graph --oneline branch_name_1 branch_name_2 branche_name_3
+
+
 
